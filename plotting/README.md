@@ -199,4 +199,3 @@ for x,y in zip(xx,yy):
     ab = AnnotationBbox(im, (x, y), frameon=False)
     ax.add_artist(ab)
 ```
-- 
