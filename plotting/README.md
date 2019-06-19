@@ -1,5 +1,7 @@
 # Playing with Plotting
 
+(**The info in this README is also available, and probably more readable, in the playing_with_plotting.ipynb**)
+
 What follows includes some exercises/challenges related to plotting and displaying data in Python. 
 
 The goal is to provide an opportunity to play with different types of data and explore ways of displaying it. You don't need to do every single exercise, and you don't need to do them all today. Hopefully this can serve as a useful reference for future work. 
