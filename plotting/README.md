@@ -144,6 +144,21 @@ Defining a figure lets you save it to disk:
 `fig.savefig('figure.pdf')`
 
 
+**Iterate through a colormap**
+If you are plotting several lines in a for loop, you can iterate through a colormap so each line has a different color without explicitly having to define each one:
+
+```
+from matplotlib.pyplot import cm  
+import numpy as np  
+
+# let nlines be the number of lines you have to plot  
+colors = iter(cm.magma(np.linspace(0,1,nlines)))  
+for thing in things_to_plot:  
+    c = next(colors)  
+    plt.plot(x, y, c=c)
+```
+
+
 **Iterate through plotting symbols**  
 In a similar way you can iterate through markers when making a scatter plot (or a line plot with markers):
 
