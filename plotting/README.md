@@ -22,7 +22,7 @@ The exercies that follow relate to:
 In this directory is a 1d spectrum from SDSS of a z~0.076 star-forming galaxy.  
 The same spectrum is available in two file formats: `spec.dat` and `spec.fits`  
 
-The wavelength is in units of $A$ and the flux and flux error are in units of $10^{-17}$ erg/s/cm$^2$/$A$
+The wavelength is in units of A and the flux and flux error are in units of 10^{-17}erg/s/cm^2/A
 
 **Read in the spectrum**  
 Options include `numpy.genfromtxt`, `astropy.table.Table`, `astropy.io.fits`
@@ -31,7 +31,7 @@ Options include `numpy.genfromtxt`, `astropy.table.Table`, `astropy.io.fits`
 
 **Measure emission line fluxes**  
 
-In this spectrum, there is an H$\alpha$ emission line at 6563 $A$ $\times$ $(1+z)$. What is the flux of this line?
+In this spectrum, there is an H-alpha emission line at 6563A * (1+z). What is the flux of this line?
 
 Consider trying:
 - directly integrating the flux of the line (you might explore one of the modules in `scipy.integrate`)
@@ -49,9 +49,9 @@ and comparing the fluxes you get with either method
 In this directory there is another file `galSpecSubset-dr8.fits` containing some measurements from spectra for a subset of the [MPA-JHU value-added SDSS catalog](https://www.sdss.org/dr12/spectro/galaxy_mpajhu/). These measurements were released for SDSS data release 8 and are named after the Max Planck Institute for Astrophysics and the Johns Hopkins University where the measurement technique was developed (see [Brinchmann et al. 2004](http://adsabs.harvard.edu/abs/2004MNRAS.351.1151B), [Kauffmann et al. 2003](http://adsabs.harvard.edu/abs/2003MNRAS.341...33K), and [Tremonti et al. 2004](http://adsabs.harvard.edu/abs/2004ApJ...613..898T)).
 
 The subset of data here includes
-- `logmass`: log$_{10}$(mass [$M_{\odot}$]),
-- `logsfr`: log$_{10}$(star formation rate [$M_{\odot}$/yr]), and 
-- `haflux`: H$\alpha$ line flux in units of $10^{-17}$ erg/s/cm$^2$/$A$ 
+- `logmass`: log_{10}(mass [M_sol]),
+- `logsfr`: log_{10}(star formation rate [M_sol/yr]), and 
+- `haflux`: H-alpha line flux in units of 10^{-17}erg/s/cm^2/A 
 
 for ~0.3% of the full catalog. 
 
